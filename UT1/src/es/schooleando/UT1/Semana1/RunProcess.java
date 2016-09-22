@@ -15,15 +15,15 @@ public class RunProcess {
 		try {
 			Process process = pb.start();
 			int retorno = process.waitFor();
-			System.out.println("La ejecución de " + Arrays.toString(args)+ " devuelve " + retorno);
+			System.out.println("La ejecucion de " + Arrays.toString(args)+ " devuelve " + retorno);
 			
 		}
 		catch (IOException e) {
-			System.err.println("Excepción de E/S");
+			System.err.println("Excepcion de E/S");
 			System.exit(-1);
 		}
 		catch (InterruptedException e) {
-			System.err.println("El proceso hijo finalizó de forma incorrecta");
+			System.err.println("El proceso hijo finaliza de forma incorrecta");
 			System.exit(-1);
 		}
 	}
